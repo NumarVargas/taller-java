@@ -1,0 +1,73 @@
+/* Inputs */
+.input {
+  background: #f1f5f9;
+  border: 2px solid #065f46;
+  border-radius: 0.5rem;
+  padding: 0.4rem 0.6rem;
+  color: #111;
+  width: 100%;
+}
+.input:focus {
+  border-color: #f97316;
+  outline: none;
+  box-shadow: 0 0 5px rgba(249,115,22,0.5);
+}
+
+/* Botones */
+.btn {
+  background: #f97316;
+  color: white;
+  padding: 0.4rem 0.8rem;
+  border-radius: 0.5rem;
+  font-weight: 600;
+  transition: transform 0.15s ease, background 0.2s;
+}
+.btn:hover { 
+  background: #ea580c; 
+  transform: translateY(-2px);
+}
+
+.btn-secondary {
+  background: #065f46;
+  color: white;
+  padding: 0.4rem 0.8rem;
+  border-radius: 0.5rem;
+  font-weight: 600;
+  transition: transform 0.15s ease, background 0.2s;
+}
+.btn-secondary:hover { 
+  background: #047857; 
+  transform: translateY(-2px);
+}
+
+/* Tarjetas */
+.card {
+  background: #065f46;
+  border-radius: 0.75rem;
+  padding: 0.75rem;
+  text-align: center;
+  transition: all .2s;
+}
+.card:hover { 
+  transform: scale(1.03);
+  box-shadow: 0 6px 12px rgba(0,0,0,0.2);
+}
+
+/* Badges */
+.badge {
+  display: inline-block;
+  font-size: 0.7rem;
+  padding: 0.2rem 0.5rem;
+  border-radius: 999px;
+  color: white;
+  margin: 0.1rem;
+}
+
+/* Animación Modal */
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(-10px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+.animate-fadeIn {
+  animation: fadeIn 0.25s ease-out;
+}
